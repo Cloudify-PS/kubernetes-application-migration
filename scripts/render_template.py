@@ -38,7 +38,15 @@ def _render(definition, label):
     rendered_definition = copy.deepcopy(definition)
 
     if label:
-        rendered_definition[DEFINITION_KEY_SPEC][DEFINITION_KEY_TEMPLATE][DEFINITION_KEY_SPEC][DEFINITION_KEY_NODE_SELECTOR] = label
+        rendered_definition[
+            DEFINITION_KEY_SPEC
+        ][
+            DEFINITION_KEY_TEMPLATE
+        ][
+            DEFINITION_KEY_SPEC
+        ][
+            DEFINITION_KEY_NODE_SELECTOR
+        ] = label
 
     return rendered_definition
 
